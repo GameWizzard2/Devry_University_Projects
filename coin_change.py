@@ -18,11 +18,11 @@ def coin_change(coins, amount_due):
     for coin in coins:
         if amount_due == 0:
             break
-        count = amount_due // coin  # Number of coins of this denomination
-        amount_due -= count * coin  # Reduce the remaining amount_due
+        count = amount_due // coin  # Number of coins of this denomination.
+        amount_due -= count * coin  # Reduce the remaining amount_due.
         coin_count.append((coin, count))
     
-    # If amount_due is not 0 after using all coins, it means the change is not possible
+    # If amount_due is not 0 after using all coins, it means the change is not possible.
     # FIXME Really, this should produce a logging error.
     if amount_due != 0:
         return "Change not possible with given coin denominations"
