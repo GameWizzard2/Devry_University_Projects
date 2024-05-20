@@ -1,3 +1,7 @@
+"""
+This solution was from Blacksnblack
+Profile Link: https://github.com/Blacksnblack
+"""
 # rewrote as one-liner ☺
 coin_change = lambda amount_due, coins=[25, 10, 5, 1]: [[x, count:=amount_due // x, amount_due:= amount_due-count*x]  for x in coins]
 
